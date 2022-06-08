@@ -1,2 +1,2 @@
 # dio-bootcamp-impulso
-Repositório reservado para projetos realizados no Bootcamp Impulso Javascript Evolution da Digital Innovation One
+Repositório criado para exposição de projetos realizados no Bootcamp Impulso Javascript Evolution da Digital Innovation One
