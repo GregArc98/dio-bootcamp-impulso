@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align-content</title>
+    <style>
+        .container {
+            display: flex;
+            height: 2000px;
+            max-width: 300px;
+            flex-wrap: wrap;
+            border: 1px solid black;
+        }
+
+        .item {
+            background-color: red;
+            padding: 0 5px;
+            flex: 1;
+            text-align: center;
+            color: white;
+            margin: 5px;
+        }
+        .center{
+            align-content: center;
+        }
+        .flex-start{
+            align-content: flex-start;
+        }
+        .flex-end{
+            align-content: flex-end;
+        }
+        .space-around{
+         align-content: space-around;   
+        }
+        .space-between{
+            align-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <p>stretch</p>
+<div class="container">
+    <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum incidunt, laboriosam sunt doloremque id sit beatae odit ratione excepturi dolor et minus nemo non vel vero exercitationem, asperiores ullam iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas distinctio fugit, delectus, sed commodi ratione harum laboriosam ex nobis explicabo sunt veniam! Omnis sequi minus ratione, excepturi dolorum beatae nisi.</div>
+    <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam maiores sit nihil commodi sint debitis! Dolore at incidunt molestiae architecto, consequatur optio sed ullam dignissimos reprehenderit praesentium. Enim, neque facere.</div>
+    <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi possimus accusantium odit error. Saepe voluptatibus quasi hic in numquam atque illo adipisci illum necessitatibus, reprehenderit quae, possimus eveniet inventore quod. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo atque a numquam sequi asperiores eligendi ad sed laboriosam quis! Repellendus ullam beatae cumque temporibus commodi enim alias optio ipsam eveniet.</div>
+    <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nemo doloremque vitae esse mollitia. Cum inventore ex ratione maiores, labore, dolor adipisci, fugiat natus tempore officiis vitae quisquam id rem!</div>
+    <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. At excepturi ratione distinctio quibusdam provident molestias consequuntur magni ea dicta quaerat odit, corporis quia dolorum, amet dolor autem omnis, illum dolores! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi atque minima unde esse molestiae facere corrupti sequi nobis sed voluptatum aspernatur iste accusamus rerum exercitationem, assumenda tempore aut dicta quasi.</div>
+    <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio dolorem error deleniti explicabo at rem aliquam deserunt quam iure, corporis non dicta, dolore possimus tenetur consectetur ipsam voluptatum doloremque cupiditate.</div>
+    <div class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis accusantium debitis veniam eveniet? A consequuntur laborum, iure voluptas neque obcaecati unde. Porro assumenda repellat repudiandae officiis corporis illo, maiores molestias.</div>
+</div>
+<p>center</p>
+<div class="container center">
+    <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum incidunt, laboriosam sunt doloremque id sit beatae odit ratione excepturi dolor et minus nemo non vel vero exercitationem, asperiores ullam iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas distinctio fugit, delectus, sed commodi ratione harum laboriosam ex nobis explicabo sunt veniam! Omnis sequi minus ratione, excepturi dolorum beatae nisi.</div>
+    <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam maiores sit nihil commodi sint debitis! Dolore at incidunt molestiae architecto, consequatur optio sed ullam dignissimos reprehenderit praesentium. Enim, neque facere.</div>
+    <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi possimus accusantium odit error. Saepe voluptatibus quasi hic in numquam atque illo adipisci illum necessitatibus, reprehenderit quae, possimus eveniet inventore quod. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo atque a numquam sequi asperiores eligendi ad sed laboriosam quis! Repellendus ullam beatae cumque temporibus commodi enim alias optio ipsam eveniet.</div>
+    <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nemo doloremque vitae esse mollitia. Cum inventore ex ratione maiores, labore, dolor adipisci, fugiat natus tempore officiis vitae quisquam id rem!</div>
+    <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. At excepturi ratione distinctio quibusdam provident molestias consequuntur magni ea dicta quaerat odit, corporis quia dolorum, amet dolor autem omnis, illum dolores! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi atque minima unde esse molestiae facere corrupti sequi nobis sed voluptatum aspernatur iste accusamus rerum exercitationem, assumenda tempore aut dicta quasi.</div>
+    <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio dolorem error deleniti explicabo at rem aliquam deserunt quam iure, corporis non dicta, dolore possimus tenetur consectetur ipsam voluptatum doloremque cupiditate.</div>
+    <div class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis accusantium debitis veniam eveniet? A consequuntur laborum, iure voluptas neque obcaecati unde. Porro assumenda repellat repudiandae officiis corporis illo, maiores molestias.</div>
+</div>
+<p>flex-start</p>
+<div class="container flex-start">
+    <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum incidunt, laboriosam sunt doloremque id sit beatae odit ratione excepturi dolor et minus nemo non vel vero exercitationem, asperiores ullam iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas distinctio fugit, delectus, sed commodi ratione harum laboriosam ex nobis explicabo sunt veniam! Omnis sequi minus ratione, excepturi dolorum beatae nisi.</div>
+    <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam maiores sit nihil commodi sint debitis! Dolore at incidunt molestiae architecto, consequatur optio sed ullam dignissimos reprehenderit praesentium. Enim, neque facere.</div>
+    <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi possimus accusantium odit error. Saepe voluptatibus quasi hic in numquam atque illo adipisci illum necessitatibus, reprehenderit quae, possimus eveniet inventore quod. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo atque a numquam sequi asperiores eligendi ad sed laboriosam quis! Repellendus ullam beatae cumque temporibus commodi enim alias optio ipsam eveniet.</div>
+    <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nemo doloremque vitae esse mollitia. Cum inventore ex ratione maiores, labore, dolor adipisci, fugiat natus tempore officiis vitae quisquam id rem!</div>
+    <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. At excepturi ratione distinctio quibusdam provident molestias consequuntur magni ea dicta quaerat odit, corporis quia dolorum, amet dolor autem omnis, illum dolores! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi atque minima unde esse molestiae facere corrupti sequi nobis sed voluptatum aspernatur iste accusamus rerum exercitationem, assumenda tempore aut dicta quasi.</div>
+    <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio dolorem error deleniti explicabo at rem aliquam deserunt quam iure, corporis non dicta, dolore possimus tenetur consectetur ipsam voluptatum doloremque cupiditate.</div>
+    <div class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis accusantium debitis veniam eveniet? A consequuntur laborum, iure voluptas neque obcaecati unde. Porro assumenda repellat repudiandae officiis corporis illo, maiores molestias.</div>
+</div>
+<p>flex-end</p>
+<div class="container flex-end">
+    <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum incidunt, laboriosam sunt doloremque id sit beatae odit ratione excepturi dolor et minus nemo non vel vero exercitationem, asperiores ullam iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas distinctio fugit, delectus, sed commodi ratione harum laboriosam ex nobis explicabo sunt veniam! Omnis sequi minus ratione, excepturi dolorum beatae nisi.</div>
+    <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam maiores sit nihil commodi sint debitis! Dolore at incidunt molestiae architecto, consequatur optio sed ullam dignissimos reprehenderit praesentium. Enim, neque facere.</div>
+    <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi possimus accusantium odit error. Saepe voluptatibus quasi hic in numquam atque illo adipisci illum necessitatibus, reprehenderit quae, possimus eveniet inventore quod. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo atque a numquam sequi asperiores eligendi ad sed laboriosam quis! Repellendus ullam beatae cumque temporibus commodi enim alias optio ipsam eveniet.</div>
+    <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nemo doloremque vitae esse mollitia. Cum inventore ex ratione maiores, labore, dolor adipisci, fugiat natus tempore officiis vitae quisquam id rem!</div>
+    <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. At excepturi ratione distinctio quibusdam provident molestias consequuntur magni ea dicta quaerat odit, corporis quia dolorum, amet dolor autem omnis, illum dolores! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi atque minima unde esse molestiae facere corrupti sequi nobis sed voluptatum aspernatur iste accusamus rerum exercitationem, assumenda tempore aut dicta quasi.</div>
+    <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio dolorem error deleniti explicabo at rem aliquam deserunt quam iure, corporis non dicta, dolore possimus tenetur consectetur ipsam voluptatum doloremque cupiditate.</div>
+    <div class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis accusantium debitis veniam eveniet? A consequuntur laborum, iure voluptas neque obcaecati unde. Porro assumenda repellat repudiandae officiis corporis illo, maiores molestias.</div>
+</div>
+<p>space-around</p>
+<div class="container space-around">
+    <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum incidunt, laboriosam sunt doloremque id sit beatae odit ratione excepturi dolor et minus nemo non vel vero exercitationem, asperiores ullam iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas distinctio fugit, delectus, sed commodi ratione harum laboriosam ex nobis explicabo sunt veniam! Omnis sequi minus ratione, excepturi dolorum beatae nisi.</div>
+    <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam maiores sit nihil commodi sint debitis! Dolore at incidunt molestiae architecto, consequatur optio sed ullam dignissimos reprehenderit praesentium. Enim, neque facere.</div>
+    <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi possimus accusantium odit error. Saepe voluptatibus quasi hic in numquam atque illo adipisci illum necessitatibus, reprehenderit quae, possimus eveniet inventore quod. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo atque a numquam sequi asperiores eligendi ad sed laboriosam quis! Repellendus ullam beatae cumque temporibus commodi enim alias optio ipsam eveniet.</div>
+    <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nemo doloremque vitae esse mollitia. Cum inventore ex ratione maiores, labore, dolor adipisci, fugiat natus tempore officiis vitae quisquam id rem!</div>
+    <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. At excepturi ratione distinctio quibusdam provident molestias consequuntur magni ea dicta quaerat odit, corporis quia dolorum, amet dolor autem omnis, illum dolores! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi atque minima unde esse molestiae facere corrupti sequi nobis sed voluptatum aspernatur iste accusamus rerum exercitationem, assumenda tempore aut dicta quasi.</div>
+    <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio dolorem error deleniti explicabo at rem aliquam deserunt quam iure, corporis non dicta, dolore possimus tenetur consectetur ipsam voluptatum doloremque cupiditate.</div>
+    <div class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis accusantium debitis veniam eveniet? A consequuntur laborum, iure voluptas neque obcaecati unde. Porro assumenda repellat repudiandae officiis corporis illo, maiores molestias.</div>
+</div>
+<p>space-between</p>
+<div class="container space-between">
+    <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum incidunt, laboriosam sunt doloremque id sit beatae odit ratione excepturi dolor et minus nemo non vel vero exercitationem, asperiores ullam iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas distinctio fugit, delectus, sed commodi ratione harum laboriosam ex nobis explicabo sunt veniam! Omnis sequi minus ratione, excepturi dolorum beatae nisi.</div>
+    <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam maiores sit nihil commodi sint debitis! Dolore at incidunt molestiae architecto, consequatur optio sed ullam dignissimos reprehenderit praesentium. Enim, neque facere.</div>
+    <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi possimus accusantium odit error. Saepe voluptatibus quasi hic in numquam atque illo adipisci illum necessitatibus, reprehenderit quae, possimus eveniet inventore quod. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo atque a numquam sequi asperiores eligendi ad sed laboriosam quis! Repellendus ullam beatae cumque temporibus commodi enim alias optio ipsam eveniet.</div>
+    <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nemo doloremque vitae esse mollitia. Cum inventore ex ratione maiores, labore, dolor adipisci, fugiat natus tempore officiis vitae quisquam id rem!</div>
+    <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. At excepturi ratione distinctio quibusdam provident molestias consequuntur magni ea dicta quaerat odit, corporis quia dolorum, amet dolor autem omnis, illum dolores! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi atque minima unde esse molestiae facere corrupti sequi nobis sed voluptatum aspernatur iste accusamus rerum exercitationem, assumenda tempore aut dicta quasi.</div>
+    <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio dolorem error deleniti explicabo at rem aliquam deserunt quam iure, corporis non dicta, dolore possimus tenetur consectetur ipsam voluptatum doloremque cupiditate.</div>
+    <div class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis accusantium debitis veniam eveniet? A consequuntur laborum, iure voluptas neque obcaecati unde. Porro assumenda repellat repudiandae officiis corporis illo, maiores molestias.</div>
+</div>
+</body>
+
+</html>
