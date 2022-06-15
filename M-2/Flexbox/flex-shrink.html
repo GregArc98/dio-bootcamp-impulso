@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - flex-shrink</title>
+    <style>
+        .container{
+            display: flex;
+            border: 1px solid black;
+            max-width: 350px;
+            margin-bottom: 5px;
+        }
+        .item{
+            margin: 5px;
+            background-color: blueviolet;
+            font-size: 24px;
+            text-align: center;
+        }
+        .s-0{
+            flex-shrink: 0;
+        }
+        .s-1{
+            flex-shrink: 1;
+        }
+        .fg-1{
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <p>shrink 1</p>
+    <div class="container">
+        <div class="item s-1 fg-1">a</div>
+        <div class="item s-1 fg-1">B</div>
+        <div class="item s-1 fg-1">C</div>
+        <div class="item s-1 fg-1">D</div>
+        <div class="item s-1 fg-1">T</div>
+    </div>
+    <div class="container">
+        <div class="item s-1 fg-1">a</div>
+        <div class="item s-1 fg-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint aliquid fuga sed voluptas voluptatem distinctio soluta possimus deleniti ea. Velit consequatur distinctio voluptates facere voluptas, incidunt sapiente? Placeat, maiores reiciendis!</div>
+        <div class="item s-1 fg-1">C</div>
+        <div class="item s-1 fg-1">D</div>
+    </div>
+    <p>shrink 0</p>
+    <div class="container">
+        <div class="item s-0 fg-1">a</div>
+        <div class="item s-0 fg-1">B</div>
+        <div class="item s-0 fg-1">C</div>
+        <div class="item s-0 fg-1">D</div>
+        <div class="item s-0 fg-1">T</div>
+    </div>
+    <div class="container">
+        <div class="item s-0 fg-1">a</div>
+        <div class="item s-0 fg-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint aliquid fuga sed voluptas voluptatem distinctio soluta possimus deleniti ea. Velit consequatur distinctio voluptates facere voluptas, incidunt sapiente? Placeat, maiores reiciendis!</div>
+        <div class="item s-0 fg-1">C</div>
+        <div class="item s-0 fg-1">D</div>
+    </div>
+    
+</body>
+</html>
